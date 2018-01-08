@@ -25,9 +25,20 @@ button {
   display: inline
 }
 
+.tags li {
+  display: inline-block;
+  background-color:royalblue;
+  color: lightyellow;
+  padding: 2px 5px;
+  font-size: smaller;
+  margin-right: 5px
+}
+
 #search,
 #detail,
 #create,
 #edit {
   display: none;
 }
+
+
