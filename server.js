@@ -6,6 +6,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const routerV1 = require('./routers/router.v1');
 const routerV2 = require('./routers/router.v2');
+const routerV3 = require('./routers/router.v3');
 const { PORT } = require('./config');
 
 const app = express();
@@ -17,6 +18,7 @@ app.use(bodyParser.json());
 
 app.use('/api/v1', routerV1);
 app.use('/api/v2', routerV2);
+app.use('/api/v3', routerV3);
 
 // Catch-all endpoint for requests to non-existent endpoint
 app.use(function (req, res, next) {
